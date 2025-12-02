@@ -59,6 +59,7 @@ img {
 
 a {
     color: inherit;
+    font-weight: bold;
 }
 
 .form-header {
@@ -116,6 +117,11 @@ button {
     margin-bottom: 8px;
 }
 
+button:hover {
+    scale: 1.04;
+    box-shadow: 2px 2px 5px -2px black;
+}
+
 .form-footer > p > a {
     color:#2A563B;
     font-weight: 600;
@@ -145,7 +151,12 @@ button {
     font-family: 'shortcut', sans-serif;
 }
 
-/* background image is too short when window height shrinks */
-/* add button animation and form colors */
-/* maybe change it so the form margins/gaps scale based on height to prevent overflow? */
-/* odin font */
+input:focus {
+    outline: none;
+    box-shadow: 2px 2px 5px -2px black;
+    border: 1px solid #2A563B;
+}
+
+input[type="password"]:focus:invalid {
+    border: 1px solid red;
+}
