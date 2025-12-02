@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'shortcut';
+    src: url(../fonts/SHORTCUT.woff2) format('woff2'),
+         url(../fonts/SHORTCUT.woff) format('woff');
+    unicode-range: U+0025-00FF;
+    font-display: swap;
+}
+
 body {
     box-sizing: border-box;
     display: flex;
@@ -30,7 +38,7 @@ img {
     margin: auto;
     color: white;
     opacity: 80%;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .sign-up-column {
@@ -62,11 +70,12 @@ form {
     background-color: rgb(248, 248, 248);
     padding: 10px 0 30px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    color:rgb(40, 40, 40)
 }
 
 .form-text {
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 10px 6vw 20px;
 }
 
@@ -85,7 +94,7 @@ form {
 }
 
 form label {
-    font-size: 0.7em;
+    font-size: 0.7rem;
     font-weight: 700;
     margin-bottom: 2px;
 }
@@ -102,7 +111,7 @@ button {
     padding: 15px 50px;
     color: rgb(248, 248, 248);
     border: none;
-    font-size: 1em;
+    font-size: 1rem;
     cursor: pointer;
     margin-bottom: 8px;
 }
@@ -127,11 +136,16 @@ button {
 .odin-image {
     height: 120px;
     width: auto;
-  /* Sets a maximum width to prevent the element from getting too big */
     max-width: 100%;
 }
 
 .odin-text {
     color: rgb(230, 233, 231);
-    font-size: 5em;
+    font-size: 6rem;
+    font-family: 'shortcut', sans-serif;
 }
+
+/* background image is too short when window height shrinks */
+/* add button animation and form colors */
+/* maybe change it so the form margins/gaps scale based on height to prevent overflow? */
+/* odin font */
